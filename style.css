@@ -1,0 +1,184 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+    font-size:20px;
+}    
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans;
+}
+header {
+    position: relative;
+    background-image: url(achtergrondplaatje.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:90vh;
+    width:100vw;
+}
+.logo {
+    box-shadow: 0px 6px 3px -3px rgba(0,0,0,0.85);
+    position: relative;
+}
+.socials {
+    position: relative;
+    left: 70vw;
+}
+.socials img {
+    width: 2em;
+}
+.bantext {
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    height: 10vh;
+    width: 100vw;
+    bottom:0;
+    color: white;
+}
+.call {
+    position: absolute;
+    right: 15vw;
+    bottom: 0;
+    width: 300px;
+    z-index: 500;
+}
+.yellow {
+   background-color: yellow;
+   height: 5vh;
+   padding: 20px;
+}
+.white {
+   background-color: white;
+   height: auto;
+   padding: 20px 20px 15px 20px;
+}
+nav {
+    width: 100vw;       
+    height: 10vh;
+    background-color: red;
+}
+ul  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav a {
+    display: block
+    color: black;
+    text-decoration: none;
+    font-family: sans;
+    border-right: solid 1px #ffffff;
+    padding-right: 2%;
+
+}
+article {
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    color: black;
+}
+.mainflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    background-color: grey;
+    padding-bottom: 5%;
+}
+.art1 {
+    background:linear-gradient(rgba(0,0,255,0.5), rgba(0,0,255,0.5)), url("zanger.jpg");
+    background-size: cover;
+
+}
+.art2 {
+    background:linear-gradient(rgba(255,0,0,0.5), rgba(255,0,0,0.5)),url("gitarist.jpg");
+    background-size: cover;
+}
+.art3 {
+    background:linear-gradient(rgba(0,255,0,0.5), rgba(0,255,0,0.5)),url("gitaristmain.jpg");
+    background-size: cover;
+}
+.band {
+    text-align: center;
+    background-color: darkgrey;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 25px;
+}
+article h1 {
+    margin-top: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+footer {
+    margin-left: 10%;
+}
+footer h2 {
+    color: mediumpurple;
+}
+footer h4 {
+    color: mediumpurple;
+}
+footer p {
+    border-left: thick solid mediumpurple;
+    padding-left: 5%;
+    width: 15%;
+    display: inline-block;
+    margin-left: 5%;
+}
+footer .headers {
+    float: left;
+}
+footer a {
+    color: mediumpurple;
+    display: block;
+    padding-top: 15px;
+    text-decoration: none;
+}
+.colorspace{
+    background: linear-gradient(-90deg, black, red);
+    width: 60%;
+    height: 215px;
+    float: right;
+    padding-left: 3%;
+}
+.colorspace h2 {
+    color: white !important;
+    width: 35%; 
+}
+@media (max-width: 720px) {
+    .mainflex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: darkgrey;
+        padding-bottom: 5%;
+    }
+    nav a{
+        display: block;
+    }
+    nav {
+        height: 150px;
+    }
+}
